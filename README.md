@@ -1,4 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Project configuration
+
+- Clonar repositorio
+
+```bash
+git clone 
+```
+- Acceder a la acrpeta
+
+```bash
+cd querer-tour-nextjs
+```
+
+- Navegar a la rama develop
+
+```bash
+git checkout develop
+```
+
+- Crear la rama feature
+
+```bash
+git branch feature/#-nombre-tarea
+```
+
+- Moverse a la rama feature
+
+```bash
+git checkout nombre-rama-trabajo
+```
+- Subir cambios a la rama feature
+
+```bash
+git push -u origin nombre-rama-trabajo
+```
+
+> [!IMPORTANT]  
+> Recuerda hacer el pull request a la rama develop!!
 
 ## Getting Started
 
@@ -29,8 +66,3 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
