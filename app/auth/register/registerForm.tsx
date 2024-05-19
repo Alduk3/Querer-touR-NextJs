@@ -6,12 +6,14 @@ const RegisterForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     lastname: '',
-    id: '',
+    idType: 'PP',
     numberId:'',
     email: '',
     password: '',
     confirmPassword: '',
   });
+
+  const [error, setError] = useState<string | null>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({
@@ -22,6 +24,11 @@ const RegisterForm = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+      if (formData.password !== formData.confirmPassword) {
+      setError('Passwords do not match');
+      return;
+    }
 
     try {
       const response = await axios.post('http://localhost:3001/users/register', formData);
