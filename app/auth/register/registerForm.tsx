@@ -31,9 +31,29 @@ const RegisterForm = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:3001/users/register', formData);
-      console.log('Registro exitoso', response.data);
-      // Aquí puedes redirigir al usuario o mostrar un mensaje de éxito
+      // Enviar los datos relevantes a la API de NestJS
+      const registerResponse = await axios.post('http://localhost:3010/v1/auth/register', {
+        email: formData.email,
+        password: formData.password,
+        role: 'USER',
+      });
+
+      const { email, role, uuid } = registerResponse.data;
+
+       // Unir los datos de la respuesta con el resto del formulario
+      const completeData = {
+        ...formData,
+        email,
+        role,
+        uuid,
+      };
+
+      // Enviar los datos completos a la API de Spring Boot
+      // const springBootResponse = await axios.post('http://localhost:8080/api/users', completeData);
+      // console.log('Registro completo y enviado a Spring Boot', springBootResponse.data);
+      // setError(null); // Limpiar mensaje de error
+
+
     } catch (error) {
       console.error('Error en el registro', error);
       // Aquí puedes mostrar un mensaje de error al usuario
