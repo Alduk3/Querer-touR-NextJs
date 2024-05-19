@@ -28,7 +28,7 @@ export default function LoginForm() {
 
     try {
       //To navigate to other page
-      router.push('/hola');
+      //router.push('/hola');
     } catch (error) {
       console.error('Error occurred while redirecting:', error);
     }
