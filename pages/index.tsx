@@ -6,7 +6,7 @@ export default function Home() {
   const router = useRouter();
 
   const handlerRegisterWithEmail = () => {
-    router.push('/register');
+    router.push('/auth/register');
   };
 
   const handleLoginWithGoogle = () => {
