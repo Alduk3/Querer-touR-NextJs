@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-const Home = () => {
+const Main = () => {
   return (
     <div className="min-h-screen bg-gray-100">
       <Head>
@@ -26,7 +26,7 @@ const Home = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Ejemplo de lugar destacado */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
-              <img src="/images/lugar1.jpg" alt="Lugar 1" className="w-full h-48 object-cover"/>
+              <img src="/images/lugar1.jpg" alt="Lugar 1" className="w-full h-48 object-cover" />
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-2">Pueblo 1</h3>
                 <p className="text-gray-700 mb-4">Descripción breve del lugar turístico.</p>
@@ -35,7 +35,7 @@ const Home = () => {
             </div>
             {/* Más lugares destacados */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
-              <img src="/images/lugar2.jpg" alt="Lugar 2" className="w-full h-48 object-cover"/>
+              <img src="/images/lugar2.jpg" alt="Lugar 2" className="w-full h-48 object-cover" />
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-2">Pueblo 2</h3>
                 <p className="text-gray-700 mb-4">Descripción breve del lugar turístico.</p>
@@ -43,7 +43,7 @@ const Home = () => {
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
-              <img src="/images/lugar3.jpg" alt="Lugar 3" className="w-full h-48 object-cover"/>
+              <img src="/images/lugar3.jpg" alt="Lugar 3" className="w-full h-48 object-cover" />
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-2">Pueblo 3</h3>
                 <p className="text-gray-700 mb-4">Descripción breve del lugar turístico.</p>
@@ -61,4 +61,4 @@ const Home = () => {
   );
 }
 
-export default Home;
+export default Main;

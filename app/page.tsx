@@ -1,9 +1,10 @@
 import Head from 'next/head';
-import "../app/ui/global.css"
+
+import "./ui/dashboard/nav-links"
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-red-950">
       <Head>
         <title>QuerertouR</title>
         <meta name="description" content="Descubre los mejores lugares turísticos de Antioquia" />
