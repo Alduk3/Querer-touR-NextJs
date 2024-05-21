@@ -51,7 +51,7 @@ export default function GalleryGrid() {
 
 
                 {/* Texto */}
-                <div className="col-span-2.5 mt-8 gap-4 mt-4 p-4">
+                <div className="col-span-2.5 gap-4 mt-4 p-4">
                     <p className="text-lg">
                         "Un lugar con magia, color y naturaleza, a 700 mts del parque de Jardín y especial para la tranquilidad y el descanso"
                     </p>

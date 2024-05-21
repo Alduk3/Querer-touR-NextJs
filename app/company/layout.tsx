@@ -45,6 +45,7 @@ import React from "react"
 import DiscountNav from "../ui/company/discountnav";
 import GalleryGrid from '../ui/company/gallery';
 import SlideOthersExperiences from '../ui/company/slide-others-experiences';
+import CircleRectangle from '../ui/company/circle-rectangle';
 
 export default function Layout(
     { children }: { children: React.ReactNode }
@@ -59,6 +60,7 @@ export default function Layout(
             <div>
                 <GalleryGrid />
                 <DiscountNav />
+                <CircleRectangle />
                 
             </div>
             <div className="flex-grow p-6 md:overflow-y-auto md:p-12">{children}</div>
