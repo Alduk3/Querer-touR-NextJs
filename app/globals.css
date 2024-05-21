@@ -17,13 +17,31 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+  background: #eee;
+  overflow-x:  hidden;
+}
+
+main{
+  padding: 0 60px;
+}
+
+.slick-slide>div{
+  margin: 0 30px;
+}
+
+.slick-slide>div:nth-child(1){
+  margin-left: 0;
+}
+
+.slick-list{
+  margin-right: -30px;
 }
 
 @layer utilities {
