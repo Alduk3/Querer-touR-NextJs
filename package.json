@@ -1,26 +1,41 @@
 {
-  "name": "querer-tour-nextjs",
-  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "next dev",
+    "prettier": "prettier --write --ignore-unknown .",
+    "prettier:check": "prettier --check --ignore-unknown .",
+    "start": "next start"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.3"
+    "@heroicons/react": "^2.0.18",
+    "@tailwindcss/forms": "^0.5.7",
+    "@vercel/postgres": "^0.5.0",
+    "bcrypt": "^5.1.1",
+    "clsx": "^2.0.0",
+    "next": "^14.0.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "zod": "^3.22.2"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.3"
+    "@types/bcrypt": "^5.0.1",
+    "@types/node": "^20.12.12",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "18.2.14",
+    "@vercel/style-guide": "^5.0.1",
+    "autoprefixer": "^10.4.19",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.52.0",
+    "eslint-config-next": "^14.0.0",
+    "eslint-config-prettier": "9.0.0",
+    "postcss": "^8.4.38",
+    "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "0.5.4",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=18.17.0"
   }
 }
